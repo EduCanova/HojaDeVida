@@ -10,17 +10,21 @@
     </head>
     <body>
       <header>
-        <h1>Hoja de Vida </h1>
-        <h2>Datos Personales</h2>
-        <h3>Nombre:  Eduardo Ernesto Canova Casafus </h3>
-        <h3>Apellido:  Canova Casafus </h3>
-        <h3>Fecha: 14/09/1987 </h3>
-        <h3>Lugar de nacimiento: Ciudad Presidente Stroessner </h3>
+        <style>
+          body {
+            background-color: #93B874;
+              }
+          </style>
+        <h1>Hoja de vida</h1>
+        <nav>
+          <a href ="index.html">Datos personales</a>
+          <a href ="experiencia.html">Experiencias</a>
+        </nav>
+        <g>
+        <img src="Media/Imagenes/Edu.jpg" height="120px">
+        </g>
       </header>
-      <nav>
-        <a href ="index.html">Datos personales</a>
-        <a href ="experiencia.html">Experiencias</a>
-      </nav>
+
       <section>
         <article>
           <h1>Educación</h1>
@@ -49,10 +53,42 @@
             </tbody>
           </table>
           <h3>Agregar Estudios</h3>
+          <form name="FormDeDatos" autocomplete="on" action="">
+            <p>
+              <label for="year">Año </label>
+              <select name="year">
+                <option value="1"> 2015 </option>
+                <option value="2">2016 </option>
+                <option value="3"> 2017</option>
+              </select>
+            </p>
+            <p>
+              <label for="institute">Institución:</label>
+              <input type="text"  name = "institute" placeholder="Colegio San José" required>
+            </p>
+            <p>
+              <label for="place">Lugar:</label>
+              <input type="text"  name = "place" placeholder="Ciudad de México" required>
+            </p>
+            <p>
+              <label for ="culminado">¿Culminó?: </label>
+              <br>
+              <input type="radio" name="culminado"> Si
+              <br>
+              <input type="radio" name="culminado">No
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
         </article>
       </section>
       <footer>
-        <p><strong>e-mail: </strong> edu-canova@hotmail.com  <strong> Teléfono: </strong> +595986922515 <br><strong> Dirección: </strong> Calle Guillermo Boummann 2370, Ciudad del Este, Paraguay</p>
+        <p>Derechos Reservados</p>
+        <ul>
+          <li><strong>e-mail: </strong> edu-canova@hotmail.com  <strong></li>
+          <li><strong>Teléfono: </strong> +595986922515 </li>
+          <li><strong> Dirección: </strong> Calle Guillermo Boummann 2370, Ciudad del Este, Paraguay</li>
+        </ul>
       </footer>
     </body>
   </html>
